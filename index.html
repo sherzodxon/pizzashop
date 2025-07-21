@@ -10,25 +10,46 @@
         <header class="header">
             <div class="container header__container">
                 <a href="index.html" class="logo">pizzashop</a>
-                <nav class="header__nav">
-                    <ol class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="index.html" class="header__nav-item-link">Home</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="index.html" class="header__nav-item-link">Menu</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="index.html" class="header__nav-item-link">Events</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="index.html" class="header__nav-item-link">About us</a>
-                        </li>
-                    </ol>
-                </nav>
+                <div class="header__nav-wrapper">
+                    <nav class="header__nav">
+                        <ol class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">Home</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">Menu</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">Events</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">About us</a>
+                            </li>
+                        </ol>
+                    </nav>
+                     <a href="index.html" class="link header__nav-sign-link">Log in</a>
+                </div>
                 <div class="header__button-wrapper">
-                    <a href="index.html" class="link header-sign-link">Log in</a>
-                    <a href="index.html" class="header-basket-link"></a>
+                    <a href="index.html" class="link header__sign-link">Log in</a>
+                    <a href="index.html" class="header__basket-link">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 64 58"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M16 20h32a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4z"/>
+                            <path d="M22 20a10 10 0 0 0 20 0"/>
+                            <path d="M22 20V16a10 10 0 0 1 20 0v4"/>
+                        </svg>
+
+                    </a>
+                    <button class="hamburger header__hamburger hamburger--close"></button>
                 </div>
             </div>
         </header>

@@ -40,10 +40,24 @@ a {
   color: #fff;
 }
 
+button {
+  background: transparent;
+  border: none;
+  font-family: "Muller";
+}
+
 .container {
   max-width: 1240px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.link {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 11px 56px;
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  border-radius: 25px;
 }
 
 .logo {
@@ -75,7 +89,7 @@ a {
 .header__nav-item {
   margin-right: 80px;
   position: relative;
-  padding-bottom: 13px;
+  padding: 13px 0;
 }
 .header__nav-item:last-child {
   margin-right: 0;
@@ -103,4 +117,53 @@ a {
 .header__nav-item-link {
   font-size: 17px;
   line-height: 110%;
+}
+
+.header__button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__basket-link {
+  border-radius: 50%;
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  padding: 1px 4px;
+  margin-left: 26px;
+  text-align: center;
+}
+
+.header__nav-sign-link {
+  display: none;
+}
+
+@media only screen and (max-width: 890px) {
+  .header__nav-item {
+    margin-right: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__sign-link {
+    display: none;
+  }
+  .header__nav-wrapper {
+    display: none;
+  }
+}
+.hamburger {
+  width: 27px;
+  height: 27px;
+  background: url(../../img/hamburger.png) no-repeat center center;
+  margin-left: 23px;
+  display: none;
+}
+
+.hamburger--close {
+  background: url(../../img/x-lg.svg) no-repeat center center;
+  fill: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
 }
