@@ -75,12 +75,6 @@ button {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 90%;
-    overflow-x: hidden;
-  }
-}
 .link {
   font-size: 17px;
   font-weight: 500;
@@ -102,18 +96,18 @@ button {
 
 @keyframes hamburger-opener {
   0% {
-    right: -100%;
+    transform: translateX(100%);
   }
   100% {
-    right: 0;
+    transform: translateX(0);
   }
 }
 @keyframes hamburger-closer {
   0% {
-    right: 0;
+    transform: translateX(0);
   }
   100% {
-    right: -100%;
+    transform: translateX(100%);
   }
 }
 .header {
@@ -195,22 +189,23 @@ button {
     display: none;
   }
   .header__nav-wrapper {
-    position: absolute;
+    position: fixed;
     top: 81px;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     height: calc(100vh - 81px);
     width: 50%;
     background-color: rgb(12, 5, 0);
     border-radius: 20px 0 0 20px;
     box-shadow: 5px 50px 10px 90px rgba(27, 12, 1, 0.06);
     text-align: center;
-    animation-name: hamburger-closer;
-    animation-duration: 500ms;
+    animation: hamburger-closer 500ms forwards;
+    transition: transform 0.5s ease;
+    z-index: 99;
   }
   .header__nav-wrapper--open {
-    right: 0;
-    animation-name: hamburger-opener;
-    animation-duration: 500ms;
+    transform: translateX(0);
+    animation: hamburger-opener 500ms forwards;
   }
   .header__nav-wrapper--open .header__nav-sign-link {
     display: inline-block;
@@ -222,8 +217,7 @@ button {
     margin-bottom: 20px;
   }
   .header__nav-item {
-    margin: 0;
-    margin-bottom: 12px;
+    margin: 0 0 12px;
   }
 }
 @media only screen and (max-width: 570px) {
