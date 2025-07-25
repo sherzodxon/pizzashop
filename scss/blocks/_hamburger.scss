@@ -5,10 +5,14 @@
     margin-left: 23px;
     display: none;
 }
-.hamburger--close{
-    background: url(../../img/x-lg.svg) no-repeat center center;
-    fill: $gradient;
+.hamburger--close {
+  background:$gradient ;
+  mask-image: url(../../img/x-lg.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
 }
+
 @media only screen and (max-width:$tablet){
     .hamburger{
         display: block;

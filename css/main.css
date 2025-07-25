@@ -29,9 +29,13 @@ body {
   background-color: rgb(29, 9, 2);
   color: #fff;
   font-family: "Muller";
+  max-width: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
-ul, ol {
+ol,
+ul {
   list-style: none;
 }
 
@@ -46,12 +50,40 @@ button {
   font-family: "Muller";
 }
 
+.gradient-border {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 11px 52px 10px 50px;
+  background: linear-gradient(to right, rgb(29, 9, 2), rgb(29, 9, 2)), linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  cursor: pointer;
+}
+.gradient-border span {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.gradient-border:hover {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+}
+.gradient-border:hover span {
+  color: #fff;
+}
+
 .container {
   max-width: 1240px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    overflow-x: hidden;
+  }
+}
 .link {
   font-size: 17px;
   font-weight: 500;
@@ -71,6 +103,22 @@ button {
   color: transparent;
 }
 
+@keyframes hamburger-opener {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes hamburger-closer {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
+}
 .header {
   padding: 48px 0;
 }
@@ -79,6 +127,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .header__nav-list {
@@ -142,11 +191,47 @@ button {
   }
 }
 @media only screen and (max-width: 768px) {
+  .header {
+    padding: 20px 0;
+  }
   .header__sign-link {
     display: none;
   }
   .header__nav-wrapper {
-    display: none;
+    position: absolute;
+    top: 81px;
+    right: -100%;
+    height: calc(100vh - 81px);
+    width: 50%;
+    background-color: rgb(12, 5, 0);
+    border-radius: 20px 0 0 20px;
+    box-shadow: 5px 50px 10px 90px rgba(27, 12, 1, 0.06);
+    text-align: center;
+    animation-name: hamburger-closer;
+    animation-duration: 500ms;
+  }
+  .header__nav-wrapper--open {
+    right: 0;
+    animation-name: hamburger-opener;
+    animation-duration: 500ms;
+  }
+  .header__nav-wrapper--open .header__nav-sign-link {
+    display: inline-block;
+  }
+  .header__nav-list {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .header__nav-item {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .header__nav-wrapper {
+    width: 70%;
   }
 }
 .hamburger {
@@ -158,8 +243,15 @@ button {
 }
 
 .hamburger--close {
-  background: url(../../img/x-lg.svg) no-repeat center center;
-  fill: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  -webkit-mask-image: url(../../img/x-lg.svg);
+          mask-image: url(../../img/x-lg.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
 }
 
 @media only screen and (max-width: 768px) {

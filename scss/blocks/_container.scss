@@ -2,4 +2,11 @@
     max-width: 1240px;
     padding: 0 10px;
     margin: 0 auto;
+   
+}
+@media only screen and (max-width:$tablet){
+    .container{
+        width: 90%;
+        overflow-x: hidden;
+    }
 }
