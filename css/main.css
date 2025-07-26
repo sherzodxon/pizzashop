@@ -137,3 +137,92 @@ a {
 .menu__item-link:hover {
   background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
 }
+
+.card__list {
+  display: flex;
+  text-align: center;
+  margin-top: 54px;
+}
+
+.card__pizza-item {
+  background: rgb(33, 10, 1);
+  border-radius: 29.53px;
+  margin-right: 22px;
+}
+.card__pizza-item:last-child {
+  margin: 0;
+}
+
+.card__pizza-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 25.1px;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.card__pizza-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14.32px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  color: rgb(163, 163, 163);
+}
+
+.card__button {
+  border-radius: 50%;
+  border: none;
+  padding: 14px 11px 12px 10px;
+  background-color: rgb(29, 9, 2);
+  color: rgb(163, 163, 163);
+  border: 1px solid rgb(163, 163, 163);
+  cursor: pointer;
+  margin-right: 37px;
+}
+.card__button:last-child {
+  margin-right: 0;
+}
+
+.card__button--light {
+  background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
+  border: none;
+  border-radius: 50%;
+  color: rgb(163, 163, 163);
+  padding: 14px 11px 11px 10px;
+  cursor: pointer;
+  margin-right: 37px;
+}
+.card__button--light:last-child {
+  margin-right: 0;
+}
+
+.card__wrapper {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card__menu-button {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 11px 52px 10px 50px;
+  background: linear-gradient(to right, rgb(29, 9, 2), rgb(29, 9, 2)), linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  cursor: pointer;
+  transition: color 900ms;
+}
+.card__menu-button span {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.card__menu-button:hover {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+}
+.card__menu-button:hover span {
+  color: #fff;
+}

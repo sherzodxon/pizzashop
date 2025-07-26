@@ -1,0 +1,93 @@
+.card__list {
+    display: flex;
+    text-align: center;
+    margin-top: 54px;
+}
+
+.card__pizza-item {
+    background: rgba(33, 10, 1, 1);
+    border-radius: 29.53px;
+    margin-right: 22px;
+    &:last-child{
+        margin: 0;
+    }
+}
+
+.card__pizza-title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 25.1px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+}
+
+.card__pizza-text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14.32px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: rgba(163, 163, 163, 1);
+
+}
+
+.card__button {
+    border-radius: 50%;
+    border: none;
+    padding: 14px 11px 12px 10px;
+    background-color: $brown;
+    color: rgba(163, 163, 163, 1);
+    border: 1px solid rgba(163, 163, 163, 1);
+    cursor: pointer;
+    margin-right: 37px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.card__button--light {
+    background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
+    border: none;
+    border-radius: 50%;
+    color: rgba(163, 163, 163, 1);
+    padding: 14px 11px 11px 10px;
+    cursor: pointer;
+    margin-right: 37px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.card__wrapper {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card__menu-button {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 11px 52px 10px 50px;
+    background: linear-gradient(to right, $brown, $brown), $gradient;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    cursor: pointer;
+    transition: color 900ms;
+
+    span {
+        background: $gradient;
+        color: transparent;
+        background-clip: text;
+    }
+
+    &:hover {
+        background: $gradient;
+
+        span {
+            color: #fff;
+        }
+    }
+}
