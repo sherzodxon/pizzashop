@@ -1,0 +1,161 @@
+.intro {
+    padding: 61px 0 25px 0;
+    
+}
+
+.intro__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.intro__slogan {
+    font-weight: 800;
+    font-size: 69.17px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+        position: absolute;
+        width: 89px;
+        height: 56px;
+        content: "";
+        background-image: url(../../img/intro-vector-title.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        top: 20%;
+        left: 75%;
+    }
+}
+
+.intro__span-title {
+    padding: 0 30px;
+    background-image: url(../../img/Lightning.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.intro__text {
+    color: dimgrey;
+    margin-bottom: 23px;
+}
+
+.intro__span-text {
+    color: white;
+}
+
+
+
+.intro__video {
+    position: relative;
+    &::after {
+    position: absolute;
+    width: 272px;
+    height: 193px;
+    content: "";
+    background-image: url(../../img/intro-img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    }
+    button{
+        position: absolute;
+        width: 81px;
+        height: 81px;
+        border-radius: 40px;
+        border: 3px solid coral;
+        z-index: 2;
+        background-color: black;
+        left: calc(41% - 40.5px);
+        top: 50px;
+        cursor: pointer;
+        position: relative;
+        &::after{
+          position: absolute;
+          width: 24px;
+          height: 26px;
+          content: "";
+          background: url(../../img/pley.png) no-repeat center center;
+          left: calc(50% - 12px);
+          top: 25px;
+        }
+    }
+}
+.intro__img-container{
+    padding-bottom: 200px;
+}
+.intro__link-container {
+    margin-top: 58px;
+    width: 388px;
+    border: 2px solid coral;
+    padding: 18px 1px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    margin-bottom: 120px;
+    position: relative;
+    &::after{
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        content: "";
+        background-image: url(../../img/intro-vector-link.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        right: -50%;
+        top: 0;
+    }
+}
+
+.intro__link {
+    padding: 20px 56px;
+    left: 0;
+    font-weight: 500;
+    font-size: 22.44px;
+    line-height: 124%;
+    letter-spacing: 0%;
+    width: 194px;
+}
+
+.intro__menu {
+    padding: 20px 10px;
+    background: $gradient;
+    background-clip: text;
+    color: transparent;
+    border-radius: 29px;
+}
+.intro__img-one{
+    position: relative;
+    &::after {
+        position: absolute;
+        width: 200px;
+        height: 153px;
+        content: "";
+        background-image: url(../../img/intro-pizza-img.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 65%;
+        top: -5%;
+    }
+    &::before {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        content: "";
+        background-image: url(../../img/intro-fries-img.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        left:-10%;
+        bottom: 5%;
+    }
+}
+
+@media only screen and (max-width:1405px) {
+     .intro__img{
+        width: 356px;
+        height: 583px;
+     }
+      
+}
