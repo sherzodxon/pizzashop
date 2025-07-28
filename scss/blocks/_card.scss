@@ -91,3 +91,17 @@
         }
     }
 }
+.card__menu-value{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.card__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__menu-price{
+    margin-right: 46px;
+}
