@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizzashop</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <a href="index.html" class="logo">pizzashop</a>
+                <div class="header__nav-wrapper">
+                    <nav class="header__nav">
+                        <ol class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">Home</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">Menu</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">Events</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-item-link">About us</a>
+                            </li>
+                        </ol>
+                    </nav>
+                     <a href="index.html" class="link header__nav-sign-link">Log in</a>
+                </div>
+                <div class="header__button-wrapper">
+                    <a href="index.html" class="link header__sign-link">Log in</a>
+                    <a href="index.html" class="header__basket-link">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 64 58"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M16 20h32a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4z"/>
+                            <path d="M22 20a10 10 0 0 0 20 0"/>
+                            <path d="M22 20V16a10 10 0 0 1 20 0v4"/>
+                        </svg>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzashop</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container header__container">
-            <a href="index.html" class="logo">pizzashop</a>
-            <nav class="header__nav">
-                <ol class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">Home</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">Menu</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">Events</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">About us</a>
-                    </li>
-                </ol>
-            </nav>
-            <div class="header__button-wrapper">
-                <a href="index.html" class="header__sign-link link">Log in</a>
-                <a href="index.html" class="header__basket-link"></a>
+                    </a>
+                    <button class="hamburger header__hamburger hamburger--open"></button>
+                </div>
             </div>
-        </div>
-    </header>
-    <main>
+        </header>
+         <main>
+            <div class="intro">
         <div class="container intro__container">
             <div class="intro__wrapper">
                 <div class="intro__img-one">
@@ -45,19 +65,22 @@
                     </p>
                     <p class="intro__text text">We will deliver juicy pizza for your family in 30 <br> minutes, if the
                         courier is late -<span class="intro__span-text"> pizza is free</span>!</p>
+                        <div class="intro__button-wrapper">
                     <div class="intro__img-container">
                         <p class="intro__text text">Cooking process:</p>
-                        <div class="intro__video"><button></button></div>
+                        <div class="intro__video"><button class="intro__video-button"></button></div>
                         <span class="intro__pley-video"></span>
                     </div>
                     <div class="intro__link-container">
-                        <a class="link intro__link " href="index.html">To order</a>
-                        <a class="intro__link intro__menu" href="index.html">Pizza-Menu</a>
+                        <button id="button1" class="link  intro__link">To order</button>
+                        <button id="button2" class=" intro__link">Pizza-Menu</button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
+        </div>
     </main>
-</body>
-
+       <script src="js/main.js"></script>
+    </body>
 </html>
