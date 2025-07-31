@@ -6,31 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzashop</title>
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
     <header class="header">
         <div class="container header__container">
             <a href="index.html" class="logo">pizzashop</a>
-            <nav class="header__nav">
-                <ol class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">Home</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">Menu</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">Events</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="index.html" class="header__nav-item-link">About us</a>
-                    </li>
-                </ol>
-            </nav>
+            <div class="header__nav-wrapper">
+                <nav class="header__nav">
+                    <ol class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-item-link">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-item-link">Menu</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-item-link">Events</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-item-link">About us</a>
+                        </li>
+                    </ol>
+                </nav>
+                <a href="index.html" class="link header__nav-sign-link">Log in</a>
+            </div>
             <div class="header__button-wrapper">
-                <a href="index.html" class="link header-sign-link">Log in</a>
-                <a href="index.html" class="header-basket-link"></a>
+                <a href="index.html" class="link header__sign-link">Log in</a>
+                <a href="index.html" class="header__basket-link">
+                    <svg width="32" height="32" viewBox="0 0 64 58" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 20h32a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4z" />
+                        <path d="M22 20a10 10 0 0 0 20 0" />
+                        <path d="M22 20V16a10 10 0 0 1 20 0v4" />
+                    </svg>
+
+                </a>
+                <button class="hamburger header__hamburger hamburger--open"></button>
             </div>
         </div>
     </header>
@@ -38,83 +51,237 @@
         <section class="menu">
             <div class="container menu__container">
                 <h2 class="menu__title">Menu</h2>
-                <ul class="menu__list">
-                    <li class="menu__item">
+                <ul class="menu__nav-list">
+                    <li class="menu__nav-item">
                         <a href="index.html" class="menu__item-link">Show All</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__nav-item">
                         <a href="index.html" class="menu__item-link">Meat</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__nav-item">
                         <a href="index.html" class="menu__item-link">Vegetarian</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__nav-item">
                         <a href="index.html" class="menu__item-link">Sea products</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__nav-item">
                         <a href="index.html" class="menu__item-link">Mushroom</a>
                     </li>
                 </ul>
-                <ul class="card__list">
-                    <li class="card__pizza-item">
-                        <img src="img/italiano.png" alt="pizza" width="159" height="157">
-                        <h3 class="card__pizza-title">Italian</h3>
-                        <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
-                        </p>
-                        <div class="card__wrapper">
-                            <button class="card__button">22</button>
-                            <button class="card__button--light">28</button>
-                            <button class="card__button">33</button>
-                        </div>
-                        <button class="card__menu-button"><span>+ Ingridients</span></button>
-                        <div class="card__menu-value">
-                            <p class="card__menu-price">8,35$</p>
-                            <div class="card__price">
-                                <button class="card__price-button">-</button>
-                                <p class="card__value">1</p>
-                                <button class="card__price-button">+</button>
+                <ul class="menu__list">
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/italiano.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Italian</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button"><span class="card__botton-type">22</span></button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
                             </div>
+                            <button class="card__menu-button"><span class="card__span"><span class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">8,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
                         </div>
                     </li>
-                    <li class="card__pizza-item">
-                        <img src="img/venecia.png" alt="pizza" width="159" height="157">
-                        <h3 class="card__pizza-title">Venecia</h3>
-                        <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
-                        </p>
-                        <div class="card__wrapper">
-                            <button class="card__button">22</button>
-                            <button class="card__button--light">28</button>
-                            <button class="card__button">33</button>
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/venecia.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Venecia</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button">22</button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
+                            </div>
+                            <button class="card__menu-button"><span><span
+                                        class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">7,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
                         </div>
-                        <button class="card__menu-button"><span>+ Ingridients</span></button>
                     </li>
-                    <li class="card__pizza-item">
-                        <img src="img/meat.png" alt="pizza" width="159" height="157">
-                        <h3 class="card__pizza-title">Meat</h3>
-                        <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
-                        </p>
-                        <div class="card__wrapper">
-                            <button class="card__button">22</button>
-                            <button class="card__button--light">28</button>
-                            <button class="card__button">33</button>
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/meat.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Meat</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button">22</button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
+                            </div>
+                            <button class="card__menu-button"><span><span class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">9,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
                         </div>
-                        <button class="card__menu-button"><span>+ Ingridients</span></button>
                     </li>
-                    <li class="card__pizza-item">
-                        <img src="img/chease.png" alt="pizza" width="159" height="157">
-                        <h3 class="card__pizza-title">Cheese</h3>
-                        <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
-                        </p>
-                        <div class="card__wrapper">
-                            <button class="card__button">22</button>
-                            <button class="card__button--light">28</button>
-                            <button class="card__button">33</button>
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/chease.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Cheese</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button">22</button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
+
+                            </div>
+                            <button class="card__menu-button"><span><span class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">8,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
                         </div>
-                        <button class="card__menu-button"><span>+ Ingridients</span></button>
+                    </li>
+                </ul>
+                <div class="popular">
+                    <h2 class="popular__title">MOST POPULAR PIZZA</h2>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/one.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Argentina</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button">22</button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
+                            </div>
+                            <button class="card__menu-button"><span><span class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">8,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
+                        </div>
+                    </li>
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/two.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Gribnaya</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button">22</button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
+                            </div>
+                            <button class="card__menu-button"><span><span
+                                        class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">7,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
+                        </div>
+                    </li>
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/three.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Tomato</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button">22</button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
+                            </div>
+                            <button class="card__menu-button"><span><span class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">9,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
+                        </div>
+                    </li>
+                    <li class="menu__pizza-item">
+                        <div class="card">
+                            <img src="img/four.png" alt="pizza" class="card__img" width="159" height="157">
+                            <h3 class="card__pizza-title">Italian x2</h3>
+                            <p class="card__pizza-text">Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                                meat...
+                            </p>
+                            <div class="card__wrapper">
+                                <button class="card__button">22</button>
+                                <button class="card__button--light">28</button>
+                                <button class="card__button">33</button>
+
+                            </div>
+                            <button class="card__menu-button"><span><span class="card__icon">+</span>Ingridients</span></button>
+                            <div class="card__menu-value">
+                                <p class="card__menu-price">8,35 <span class="card__icon"><sup>$</sup></span></p>
+                                <div class="card__price">
+                                    <button class="card__price-button">-</button>
+                                    <p class="card__value">1</p>
+                                    <button class="card__price-button--active"><span
+                                            class="card__icon">+</span></button>
+                                </div>
+                            </div>
+                            <a href="index.html" class="card__menu-link">Order Now</a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
+        <script src="js/main.js"></script>
     </main>
 </body>
 

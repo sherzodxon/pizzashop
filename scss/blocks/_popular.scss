@@ -1,0 +1,37 @@
+.popular {
+    margin-top: 54px;
+    margin-bottom: 54px;
+    width: 1248px;
+    height: 286px;
+    background-image: url(../../img/popular.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.popular__title {
+    font-family: "Muller";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 43.86px;
+    line-height: 109.00000000000001%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 117px;
+}
+@media only screen and (max-width:1258px){
+    .popular{
+        width: 100%;
+        border-radius: 32px;
+        
+    }
+}
+@media only screen and (max-width:428px){
+    .popular{
+        background-image: url(../../img/pizza.png);
+    }
+    .popular__title{
+        font-size: 26px;
+    }
+}
