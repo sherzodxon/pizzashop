@@ -135,7 +135,6 @@ button {
   }
 }
 .header {
-  padding: 48px 0;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -409,7 +408,7 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   left: -10%;
-  bottom: 15%;
+  bottom: -10px;
 }
 
 @media only screen and (max-width: 1000px) {
