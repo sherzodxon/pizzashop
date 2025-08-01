@@ -1,0 +1,285 @@
+.intro {
+    padding: 61px 0 120px 0;
+}
+
+.intro__wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.intro__text-container {
+    padding: 0 10px;
+}
+
+.intro__slogan {
+    font-weight: 800;
+    font-size: 69.17px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+        position: absolute;
+        width: 89px;
+        height: 56px;
+        content: "";
+        background-image: url(../../img/intro-vector-title.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        top: 20%;
+        left: 75%;
+    }
+}
+
+.intro__span-title {
+    padding: 0 30px;
+    background-image: url(../../img/Lightning.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.intro__text {
+    color: dimgrey;
+    margin-bottom: 23px;
+}
+
+.intro__span-text {
+    color: white;
+}
+
+.intro__video {
+    width: 272px;
+    height: 193px;
+    background-image: url(../../img/intro-img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.intro__video-button {
+    position: absolute;
+    width: 81px;
+    height: 81px;
+    border-radius: 40px;
+    border: 3px solid coral;
+    z-index: 1;
+    background-color: black;
+    left: calc(50% - 40px);
+    top: 50px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 24px;
+        height: 26px;
+        content: "";
+        background: url(../../img/pley.png) no-repeat center center;
+        left: calc(50% - 12px);
+        top: 25px;
+    }
+}
+
+
+
+
+.intro__link-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+    width: 430px;
+    border: 2px solid coral;
+    padding: 1px 1px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    position: relative;
+
+
+    &::after {
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        content: "";
+        background-image: url(../../img/intro-vector-link.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        right: -50%;
+        top: 0;
+    }
+}
+
+.intro__link {
+    background: $gradient;
+    color: transparent;
+    background-clip: text;
+    padding: 20px 56px;
+    font-weight: 500;
+    font-size: 22.44px;
+    line-height: 124%;
+    letter-spacing: 0%;
+}
+
+
+.intro__img-one {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 190px;
+        height: 153px;
+        content: "";
+        background-image: url(../../img/intro-pizza-img.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 60%;
+        top: -5%;
+    }
+
+    &::before {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        content: "";
+        background-image: url(../../img/intro-fries-img.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: -10%;
+        bottom: 15%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .intro__img {
+        width: 370px;
+        height: 583px;
+    }
+
+    .intro__link-container {
+        width: 288px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .intro__link {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+
+    .intro__img-one {
+        &::after {
+            width: 156px;
+            height: 100px;
+            background-size: cover;
+            left: 58%;
+            top: 1px;
+        }
+
+        &::before {
+            width: 140px;
+            height: 140px;
+            background-size: cover;
+            bottom: 0%;
+            left: -10%;
+        }
+    }
+
+    .intro__slogan {
+        font-size: 45px;
+
+        &::after {
+            width: 60px;
+            height: 30px;
+            background-size: cover;
+        }
+    }
+
+    .intro__span-title {
+        background-image: url(../../img/Lightning-two.png);
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .intro__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__link {
+        font-size: 16px;
+    }
+
+    .intro__img-one {
+        &::before {
+            bottom: 0;
+        }
+    }
+
+    .intro__img-container {
+        padding-bottom: 0;
+    }
+
+    .intro__img {
+        width: 243px;
+        height: 365px;
+    }
+
+    .intro__img-one {
+        &::after {
+            top: -20px;
+        }
+
+        &::before {
+            bottom: -5%;
+            left: -20%;
+        }
+    }
+
+    .intro__video {
+        width: 194px;
+        height: 138px;
+
+        background-size: cover;
+        text-align: center;
+    }
+
+    .intro__slogan {
+        font-size: 30px;
+    }
+
+    .intro__video-button {
+        width: 57px;
+        height: 57px;
+        left: 0;
+        top: calc(50% - 28px);
+        position: relative;
+
+        &::after {
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            content: "";
+            background-image: url(../../img/pley-small.png);
+            left: calc(50% - 8px);
+            top: calc(50% - 8px);
+        }
+
+    }
+
+    .intro__button-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+    }
+    .intro__link-container{
+        margin-top: 33px;
+        margin-bottom: 32px;
+    }
+}
