@@ -136,6 +136,10 @@ button {
 }
 .header {
   padding: 48px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: rgb(29, 9, 2);
 }
 
 .header__container {
@@ -148,6 +152,18 @@ button {
 .header__nav-list {
   display: flex;
   align-items: center;
+}
+
+.header__gradient {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 82px;
+  z-index: 90;
+  background-color: rgba(23, 10, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  display: none;
 }
 
 .header__nav-item {
@@ -242,6 +258,9 @@ button {
   }
   .header__nav-item {
     margin: 0 0 12px;
+  }
+  .header__gradient--active {
+    display: block;
   }
 }
 @media only screen and (max-width: 570px) {
