@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/muller-next-expanded-trial");
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Muller";
@@ -19,7 +20,7 @@
   font-weight: 800;
   src: url("../fonts/Muller-Trial-ExtraBold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-* {
+* x {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -34,6 +35,7 @@ body {
 ol,
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -69,6 +71,11 @@ button {
   color: #fff;
 }
 
+@media only screen and (max-width: 428px) {
+  .card__span {
+    text-align: center;
+  }
+}
 .container {
   max-width: 1240px;
   padding: 0 10px;
@@ -502,5 +509,354 @@ button {
   .link {
     padding: 11px 30px;
     font-size: 16px;
+  }
+}
+.menu__title {
+  text-align: center;
+  margin-bottom: 49px;
+  font-family: "Muller";
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 69.17px;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.menu__list {
+  display: flex;
+  text-align: center;
+  margin-top: 74px;
+  justify-content: space-between;
+}
+
+.menu__pizza-item {
+  max-width: 297px;
+  background: rgb(33, 10, 1);
+  border-radius: 29.53px;
+}
+.menu__pizza-item:last-child {
+  margin: 0;
+}
+
+.menu__nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__nav-item {
+  background: rgb(33, 10, 1);
+  box-shadow: 0px 9px 40px 0px rgba(255, 107, 0, 0.06);
+  border-radius: 100px;
+  padding: 19px 65px;
+  font-family: "Muller";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+.menu__nav-item:hover {
+  background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
+}
+
+@media only screen and (max-width: 1276px) {
+  .menu__title {
+    font-size: 48px;
+  }
+  .menu__nav-item {
+    padding: 15px 45px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .menu__nav-list {
+    flex-wrap: wrap;
+  }
+  .menu__nav-list:last-child {
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 824px) {
+  .menu__nav-list {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 1063px) {
+  .menu__list {
+    flex-wrap: wrap;
+    gap: 90px;
+  }
+}
+@media only screen and (max-width: 642px) {
+  .menu__list {
+    align-content: center;
+    flex-direction: column-reverse;
+  }
+}
+.card {
+  max-width: 229px;
+  padding-left: 27px;
+  padding-right: 41px;
+  padding-bottom: 23px;
+  max-width: 297px;
+  background: rgb(33, 10, 1);
+  border-radius: 29.53px;
+  margin-right: 22px;
+}
+.card:last-child {
+  margin: 0;
+}
+
+.card__pizza-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 25.1px;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.card__pizza-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14.32px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  color: rgb(163, 163, 163);
+}
+
+.card__button {
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(29, 9, 2);
+  color: rgb(163, 163, 163);
+  border: 1px solid rgb(163, 163, 163);
+  cursor: pointer;
+  margin-right: 37px;
+  width: 40px;
+  height: 40px;
+}
+.card__button:last-child {
+  margin-right: 0;
+}
+
+.card__button--active {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  color: #fff;
+}
+
+.card__wrapper {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card__menu-button {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 11px 52px 10px 50px;
+  background: linear-gradient(to right, rgb(29, 9, 2), rgb(29, 9, 2)), linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  cursor: pointer;
+  transition: color 900ms;
+}
+.card__menu-button span {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.card__menu-button:hover {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+}
+.card__menu-button:hover span {
+  color: #fff;
+}
+
+.card__menu-value {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.card__menu-price {
+  font-family: "Muller";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 25.46px;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.card__price-button {
+  color: rgb(255, 255, 255);
+  padding: 6px 7px 6px 7px;
+  border: 1px solid #a3a3a3;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 10px;
+}
+
+.card__price-button--active {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.card__icon {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card__img {
+  margin-top: -54px;
+}
+
+.card__menu-link {
+  padding-top: 15px;
+  padding-left: 57px;
+  padding-right: 48px;
+  padding-bottom: 11px;
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  border-radius: 84px;
+  margin-top: 20px;
+}
+.card__menu-link:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1196px) {
+  .card {
+    flex-wrap: wrap;
+    max-width: 190px;
+  }
+  .card__menu-price {
+    font-size: 19px;
+  }
+  .card__button {
+    margin-right: 27px;
+  }
+  .card__button--light {
+    margin-right: 27px;
+  }
+}
+@media only screen and (max-width: 1053px) {
+  .card__menu-link {
+    padding: 10px 38px 9px 47px;
+  }
+}
+@media only screen and (max-width: 1021px) {
+  .card__menu-price {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .card {
+    max-width: 140px;
+  }
+  .card__img {
+    width: 97px;
+    height: 96px;
+  }
+  .card__pizza-title {
+    font-size: 15px;
+  }
+  .card__pizza-text {
+    font-size: 8px;
+    max-width: 140px;
+  }
+  .card__button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 50%;
+  }
+  .card__button--light {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 50%;
+  }
+  .card__menu-button {
+    width: 118px;
+    background-color: #1c0b05;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 9px;
+  }
+  .card__menu-price {
+    font-size: 14px;
+  }
+  .card__button {
+    margin-right: 15px;
+  }
+  .card__button--light {
+    margin-right: 15px;
+  }
+  .card__menu-value {
+    padding: 0;
+  }
+  .card__menu-link {
+    max-width: 118px;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    padding-left: 34px;
+    padding-right: 28px;
+    font-size: 10px;
+  }
+  .card {
+    max-width: 181px;
+  }
+}
+.popular {
+  margin-top: 54px;
+  margin-bottom: 54px;
+  width: 1248px;
+  height: 286px;
+  background-image: url(../../img/popular.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+}
+
+.popular__title {
+  font-family: "Muller";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 43.86px;
+  line-height: 109%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 125px;
+  padding-bottom: 117px;
+}
+
+@media only screen and (max-width: 1258px) {
+  .popular {
+    width: 100%;
+    border-radius: 32px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .popular {
+    background-image: url(../../img/pizza.png);
+  }
+  .popular__title {
+    font-size: 26px;
   }
 }

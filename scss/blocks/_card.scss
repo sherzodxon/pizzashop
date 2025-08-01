@@ -1,0 +1,258 @@
+.card {
+    max-width: 229px;
+    padding-left: 27px;
+    padding-right: 41px;
+    padding-bottom: 23px;
+    max-width: 297px;
+    background: rgba(33, 10, 1, 1);
+    border-radius: 29.53px;
+    margin-right: 22px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.card__pizza-title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 25.1px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+}
+
+.card__pizza-text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14.32px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: rgba(163, 163, 163, 1);
+
+}
+
+.card__button {
+    border-radius: 50%;
+    border: none;
+    background-color: $brown;
+    color: rgba(163, 163, 163, 1);
+    border: 1px solid rgba(163, 163, 163, 1);
+    cursor: pointer;
+    margin-right: 37px;
+    width: 40px;
+    height: 40px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.card__button--active{
+    background: $gradient;
+    color: #fff;
+    
+}
+
+.card__wrapper {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card__menu-button {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 11px 52px 10px 50px;
+    background: linear-gradient(to right, $brown, $brown), $gradient;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    cursor: pointer;
+    transition: color 900ms;
+
+    span {
+        background: $gradient;
+        color: transparent;
+        background-clip: text;
+    }
+
+    &:hover {
+        background: $gradient;
+
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.card__menu-value {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.card__menu-price {
+    font-family: "Muller";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 25.46px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+
+}
+
+.card__price-button {
+    color: rgba(255, 255, 255, 1);
+    padding: 6px 7px 6px 7px;
+    border: 1px solid #a3a3a3;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+}
+
+.card__price-button--active {
+    background: $gradient;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.card__icon {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card__img {
+    margin-top: -54px;
+}
+
+.card__menu-link {
+    padding-top: 15px;
+    padding-left: 57px;
+    padding-right: 48px;
+    padding-bottom: 11px;
+    background: $gradient;
+    border-radius: 84px;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width:1196px) {
+    .card {
+        flex-wrap: wrap;
+        max-width: 190px;
+    }
+
+
+    .card__menu-price {
+        font-size: 19px;
+    }
+
+    .card__button {
+        margin-right: 27px;
+    }
+
+    .card__button--light {
+        margin-right: 27px;
+    }
+
+}
+
+@media only screen and (max-width:1053px) {
+    .card__menu-link {
+        padding: 10px 38px 9px 47px;
+    }
+}
+
+@media only screen and (max-width:1021px) {
+    .card__menu-price {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:428px) {
+    .card {
+        max-width: 140px;
+    }
+
+    .card__img {
+        width: 97px;
+        height: 96px;
+    }
+
+    .card__pizza-title {
+        font-size: 15px;
+    }
+
+    .card__pizza-text {
+        font-size: 8px;
+        max-width: 140px;
+    }
+
+    .card__button {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 50%;
+    }
+
+    .card__button--light {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 50%;
+    }
+
+    .card__menu-button {
+        width: 118px;
+        background-color: #1c0b05;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 9px;
+    }
+
+    .card__menu-price {
+        font-size: 14px;
+    }
+
+    .card__button {
+        margin-right: 15px;
+    }
+
+    .card__button--light {
+        margin-right: 15px;
+    }
+
+    .card__menu-value {
+        padding: 0;
+
+    }
+
+    .card__menu-link {
+        max-width: 118px;
+        padding-top: 9px;
+        padding-bottom: 6px;
+        padding-left: 34px;
+        padding-right: 28px;
+        font-size: 10px;
+    }
+    .card{
+        max-width: 181px;
+    }
+}
