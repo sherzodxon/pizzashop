@@ -4,10 +4,20 @@
     margin: 0;
 }
 body {
-    background-color:$brown;
-    color: #fff;
+    background-color:var(--background);
+    color: var(--textColor);
     font-family: "Muller";
-    
+    transition: 250ms;
+}
+:root{
+    --background:#{$brown};
+    --textColor:#fff;
+    --hamburgerBg:rgb(12, 5, 0);
+}
+.light-body{
+    --background:#FFF8E1;
+    --textColor:#5D4037;
+    --hamburgerBg:#E0E0E0;
 }
 ol,
 ul {
