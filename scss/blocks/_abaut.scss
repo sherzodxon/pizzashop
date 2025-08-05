@@ -1,0 +1,64 @@
+.abaut__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 130px 0;
+}
+
+.abaut__title {
+    font-family: "Muller";
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 69.17px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+
+}
+
+.abaut__text {
+    font-family: "Muller";
+    font-weight: 400;
+    font-size: 19.56px;
+    max-width: 459px;
+    color: rgba(163, 163, 163, 1);
+}
+
+.abaut__pizza-warapper {
+    width: 490px;
+    height: 200px;
+    background-image: url(../../img/pizza-one.png);
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 108px;
+        height: 55px;
+        content: '';
+        right: -130px;
+        background-image: url(../../img/vektor-top.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.abaut__warapper {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 246px;
+        height: 236px;
+        content: '';
+        top: -102px;
+        right: -15px;
+        background-image: url(../../img/intro-pizza-img.png);
+    }
+
+    &::before {
+        position: absolute;
+        width: 273px;
+        height: 265px;
+        content: '';
+        bottom: 70px;
+        left: -72px;
+        background-image: url(../../img/intro-fries-img.png);
+    }
+}
