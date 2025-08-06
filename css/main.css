@@ -20,7 +20,7 @@
   font-weight: 800;
   src: url("../fonts/Muller-Trial-ExtraBold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-* x {
+* X {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -37,12 +37,16 @@ body {
   --background:rgb(29, 9, 2);
   --textColor:#fff;
   --hamburgerBg:rgb(12, 5, 0);
+  --card-bg:rgba(33, 10, 1, 1);
+  --card-button-bg:$brown;
 }
 
 .light-body {
   --background:#FFF8E1;
   --textColor:#5D4037;
   --hamburgerBg:#E0E0E0;
+  --card-bg:#dacca1;
+  --card-button-bg: #f7edcd;
 }
 
 ol,
@@ -644,9 +648,12 @@ button {
   padding-right: 41px;
   padding-bottom: 23px;
   max-width: 297px;
-  background: rgb(33, 10, 1);
+  background: var(--card-bg);
   border-radius: 29.53px;
   margin-right: 22px;
+  color: var(--textColor);
+  font-family: "Muller";
+  transition: 250ms;
 }
 .card:last-child {
   margin: 0;
@@ -700,7 +707,7 @@ button {
   border: 1px solid transparent;
   border-radius: 20px;
   padding: 11px 52px 10px 50px;
-  background: linear-gradient(to right, rgb(29, 9, 2), rgb(29, 9, 2)), linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  background: linear-gradient(to right, var(--card-button-bg)), linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   cursor: pointer;

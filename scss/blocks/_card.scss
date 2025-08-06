@@ -4,14 +4,19 @@
     padding-right: 41px;
     padding-bottom: 23px;
     max-width: 297px;
-    background: rgba(33, 10, 1, 1);
+    background: var(--card-bg);
     border-radius: 29.53px;
     margin-right: 22px;
+    color: var(--textColor);
+    font-family: "Muller";
+    transition: 250ms;
 
     &:last-child {
         margin: 0;
     }
 }
+
+
 
 .card__pizza-title {
     margin-bottom: 20px;
@@ -43,15 +48,16 @@
     margin-right: 37px;
     width: 40px;
     height: 40px;
+
     &:last-child {
         margin-right: 0;
     }
 }
 
-.card__button--active{
+.card__button--active {
     background: $gradient;
     color: #fff;
-    
+
 }
 
 .card__wrapper {
@@ -63,7 +69,7 @@
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 11px 52px 10px 50px;
-    background: linear-gradient(to right, $brown, $brown), $gradient;
+    background: linear-gradient(to right, var(--card-button-bg) ), $gradient;
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     cursor: pointer;
@@ -252,7 +258,8 @@
         padding-right: 28px;
         font-size: 10px;
     }
-    .card{
+
+    .card {
         max-width: 181px;
     }
 }
