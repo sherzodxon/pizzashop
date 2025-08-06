@@ -27,9 +27,22 @@
 }
 
 body {
-  background-color: rgb(29, 9, 2);
-  color: #fff;
+  background-color: var(--background);
+  color: var(--textColor);
   font-family: "Muller";
+  transition: 250ms;
+}
+
+:root {
+  --background:rgb(29, 9, 2);
+  --textColor:#fff;
+  --hamburgerBg:rgb(12, 5, 0);
+}
+
+.light-body {
+  --background:#FFF8E1;
+  --textColor:#5D4037;
+  --hamburgerBg:#E0E0E0;
 }
 
 ol,
@@ -135,11 +148,12 @@ button {
   }
 }
 .header {
-  padding: 48px 0;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 99;
-  background: rgb(29, 9, 2);
+  background: var(--background);
+  transition: 250ms;
 }
 
 .header__container {
@@ -197,6 +211,7 @@ button {
 .header__nav-item-link {
   font-size: 17px;
   line-height: 110%;
+  color: var(--textColor);
 }
 
 .header__button-wrapper {
@@ -214,6 +229,19 @@ button {
 
 .header__nav-sign-link {
   display: none;
+}
+
+.header__theme-button {
+  width: 25px;
+  height: 25px;
+  background: url("../../img/sun.svg") no-repeat center center;
+  cursor: pointer;
+  margin-left: 12px;
+  transition: 250ms;
+}
+
+.header__theme-button--light {
+  background: url("../../img/moon.svg") no-repeat center center;
 }
 
 @media only screen and (max-width: 890px) {
@@ -235,9 +263,8 @@ button {
     transform: translateX(100%);
     height: calc(100vh - 81px);
     width: 50%;
-    background-color: rgb(12, 5, 0);
+    background-color: var(--hamburgerBg);
     border-radius: 20px 0 0 20px;
-    box-shadow: 5px 50px 10px 90px rgba(27, 12, 1, 0.06);
     text-align: center;
     animation: hamburger-closer 500ms forwards;
     transition: transform 0.5s ease;
@@ -409,7 +436,7 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   left: -10%;
-  bottom: 15%;
+  bottom: -10px;
 }
 
 @media only screen and (max-width: 1000px) {
