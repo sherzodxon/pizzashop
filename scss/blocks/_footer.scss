@@ -33,3 +33,9 @@
 .footer__title{
     color: rgba(163, 163, 163, 1);
 }
+@media only screen and (max-width:946px){
+    .footer__container{
+        flex-direction: column;
+        text-align: center;
+    }
+}

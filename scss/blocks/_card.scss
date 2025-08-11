@@ -41,9 +41,9 @@
 .card__button {
     border-radius: 50%;
     border: none;
-    background-color: $brown;
-    color: rgba(163, 163, 163, 1);
-    border: 1px solid rgba(163, 163, 163, 1);
+    background-color: var( --card-button) ;
+    color:rgb(224, 196, 196);
+    border: 1px solid  var(--card-button);
     cursor: pointer;
     margin-right: 37px;
     width: 40px;
@@ -69,7 +69,7 @@
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 11px 52px 10px 50px;
-    background: linear-gradient(to right, var(--card-button-bg) ), $gradient;
+    background: linear-gradient(to right, var(--card-button-bg),var(--card-button-bg) ), $gradient;
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     cursor: pointer;

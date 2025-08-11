@@ -44,21 +44,108 @@
 
     &::after {
         position: absolute;
-        width: 246px;
-        height: 236px;
+        width: 190px;
+        height: 153px;
         content: '';
-        top: -102px;
+        top: -68px;
         right: -15px;
         background-image: url(../../img/intro-pizza-img.png);
+        background-position: center center;
     }
 
     &::before {
         position: absolute;
-        width: 273px;
-        height: 265px;
+        width: 180px;
+        height: 200px;
         content: '';
-        bottom: 70px;
-        left: -72px;
+        bottom: 100px;
+        left: -52px;
         background-image: url(../../img/intro-fries-img.png);
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width:1135px) {
+    .abaut__pizza-warapper {
+        &::after {
+            right: -125px;
+        }
+    }
+
+    .abaut__img {
+        width: 480px;
+        height: 465px;
+    }
+}
+
+@media only screen and (max-width:1095px) {
+    .abaut__title {
+        font-size: 45px;
+    }
+
+    .abaut__text {
+        font-size: 16px;
+    }
+
+    .abaut__img {
+        width: 480px;
+    }
+
+    .abaut__pizza-warapper {
+        &::after {
+            left: 90px;
+            display: none
+        }
+    }
+}
+
+@media only screen and (max-width:1001px) {
+    .abaut__warapper {
+        &::after {
+            width: 235px;
+        }
+    }
+}
+
+@media only screen and (max-width:998px) {
+    .abaut__pizza-warapper {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center center;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .abaut__warapper {
+        &::after {
+            width: 150px;
+            height: 150px;
+            left: 370px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left:300px;
+        }
+
+        &::before {
+            width: 150px;
+            height: 180px;
+            top: 300px;
+            left: 0px ;
+            bottom: 50px;
+            background-size: contain;
+        }
+
+    }
+}
+@media only screen and (max-width:768px){
+    .abaut__container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .abaut__title{
+        text-align: center;
     }
 }
