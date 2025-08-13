@@ -16,8 +16,11 @@
     font-size: 25.09px;
     margin-top: 87px;
     padding-bottom: 28px;
+    color: #fff;
 }
-
+.events__description{
+    margin-top:87px ;
+}
 .events__link {
     align-items: center;
 }
@@ -37,7 +40,7 @@
 
 .events__container-img:nth-child(1) {
     .events__img-container:nth-child(1) {
-        width: 370px;
+        width: 320px;
         height: 260px;
         background-image: url(../../img/events-one.png);
         border-radius: 30px;
@@ -51,19 +54,20 @@
             background-image: url(../../img/egg-and-bacon.png);
             background-position: center center;
             background-repeat: no-repeat;
+             background-size: cover;
             left: -60px;
         }
     }
 
     .events__img-container:nth-child(2) {
-        width: 396px;
+        width: 320px;
         height: 260px;
         background-image: url(../../img/events-two.png);
         border-radius: 30px;
     }
 
     .events__img-container:nth-child(3) {
-        width: 428px;
+        width: 328px;
         height: 260px;
     }
 
@@ -71,14 +75,14 @@
 
 .events__container-img:nth-child(2) {
     .events__img-container:nth-child(1) {
-        width: 615px;
+        width: 515px;
         height: 260px;
         background-image: url(../../img/events-sriy.png);
         border-radius: 30px;
     }
 
     .events__img-container:nth-child(2) {
-        width: 615px;
+        width: 515px;
         height: 260px;
         background-image: url(../../img/events-four.png);
         border-radius: 30px;
@@ -92,6 +96,7 @@
             background-image: url(../../img/buritto.png);
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
             right: -70px;
             bottom: 20px;
         }
@@ -101,7 +106,7 @@
 
 .events__container-img:nth-child(3) {
     .events__img-container:nth-child(1) {
-        width: 401px;
+        width: 330px;
         height: 260px;
         background-image: url(../../img/events-eyt.png);
         border-radius: 30px;
@@ -115,27 +120,28 @@
             background-image: url(../../img/cofee.png);
             background-position: center center;
             background-repeat: no-repeat;
+             background-size: cover;
             left: -50px;
             bottom: 0;
         }
     }
 
     .events__img-container:nth-child(2) {
-        width: 401px;
+        width: 330px;
         height: 260px;
         background-image: url(../../img/events-six.png);
         border-radius: 30px;
     }
 
     .events__img-container:nth-child(3) {
-        width: 401px;
+        width: 330px;
         height: 260px;
         background-image: url(../../img/events-seven.png);
         border-radius: 30px;
     }
 }
 
-@media only screen and (max-width:1433px) {
+@media only screen and (max-width:1188px) {
     .events__container-img:nth-child(3) {
         .events__img-container:nth-child(1) {
             &::after {
@@ -164,7 +170,7 @@
     .events__img-container {
         text-align: center;
     }
-}
+
 
 .events__container-img:nth-child(2) {
     .events__img-container:nth-child(2) {
@@ -197,12 +203,12 @@
     }
 
     .events__img-container:nth-child(1) {
-        width: 220px;
+        width: 230px;
         height: 230px;
     }
 
     .events__img-container:nth-child(2) {
-        width: 220px;
+        width: 230px;
         height: 230px;
     }
 
@@ -210,6 +216,7 @@
         width: 250px;
         height: 230px;
     }
+}
 }
 
 
