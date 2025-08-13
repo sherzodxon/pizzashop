@@ -27,9 +27,12 @@
 
 .events__container-img {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .events__img-container {
+    
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center center;
@@ -40,7 +43,7 @@
 
 .events__container-img:nth-child(1) {
     .events__img-container:nth-child(1) {
-        width: 320px;
+        width: 100%;
         height: 260px;
         background-image: url(../../img/events-one.png);
         border-radius: 30px;
@@ -49,25 +52,25 @@
         &::after {
             position: absolute;
             width: 190px;
-            height: 218px;
+            height: 190px;
             content: "";
             background-image: url(../../img/egg-and-bacon.png);
             background-position: center center;
             background-repeat: no-repeat;
              background-size: cover;
-            left: -60px;
+            left: -30px;
         }
     }
 
     .events__img-container:nth-child(2) {
-        width: 320px;
+        width: 100%;
         height: 260px;
         background-image: url(../../img/events-two.png);
         border-radius: 30px;
     }
 
     .events__img-container:nth-child(3) {
-        width: 328px;
+        width: 100%;
         height: 260px;
     }
 
@@ -75,14 +78,14 @@
 
 .events__container-img:nth-child(2) {
     .events__img-container:nth-child(1) {
-        width: 515px;
+        width: 100%;
         height: 260px;
         background-image: url(../../img/events-sriy.png);
         border-radius: 30px;
     }
 
     .events__img-container:nth-child(2) {
-        width: 515px;
+        width: 100%;
         height: 260px;
         background-image: url(../../img/events-four.png);
         border-radius: 30px;
@@ -90,14 +93,14 @@
 
         &::after {
             position: absolute;
-            width: 200px;
-            height: 218px;
+            width: 160px;
+            height: 160px;
             content: "";
             background-image: url(../../img/buritto.png);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            right: -70px;
+            right: -25px;
             bottom: 20px;
         }
     }
@@ -106,7 +109,7 @@
 
 .events__container-img:nth-child(3) {
     .events__img-container:nth-child(1) {
-        width: 330px;
+        width: 100%;
         height: 260px;
         background-image: url(../../img/events-eyt.png);
         border-radius: 30px;
@@ -115,26 +118,26 @@
         &::after {
             position: absolute;
             width: 190px;
-            height: 218px;
+            height: 190px;
             content: "";
             background-image: url(../../img/cofee.png);
             background-position: center center;
             background-repeat: no-repeat;
              background-size: cover;
-            left: -50px;
+            left: -40px;
             bottom: 0;
         }
     }
 
     .events__img-container:nth-child(2) {
-        width: 330px;
+        width: 100%;
         height: 260px;
         background-image: url(../../img/events-six.png);
         border-radius: 30px;
     }
 
     .events__img-container:nth-child(3) {
-        width: 330px;
+        width: 100%;
         height: 260px;
         background-image: url(../../img/events-seven.png);
         border-radius: 30px;
@@ -145,19 +148,20 @@
     .events__container-img:nth-child(3) {
         .events__img-container:nth-child(1) {
             &::after {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
                 background-size: cover;
+                left: -30px;
             }
         }
 
         .events__img-container:nth-child(1) {
-            width: 230px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(2) {
-            width: 230px;
+            width: 100%;
             height: 230px;
         }
 
@@ -175,19 +179,20 @@
 .events__container-img:nth-child(2) {
     .events__img-container:nth-child(2) {
         &::after {
-            width: 130px;
-            height: 130px;
+            width: 120px;
+            height: 120px;
             background-size: cover;
+            right: -20px;
         }
     }
 
     .events__img-container:nth-child(1) {
-        width: 360px;
+        width: 100%;
         height: 230px;
     }
 
     .events__img-container:nth-child(2) {
-        width: 360px;
+        width: 100%;
         height: 230px;
     }
 
@@ -203,17 +208,17 @@
     }
 
     .events__img-container:nth-child(1) {
-        width: 230px;
+        width: 100%;
         height: 230px;
     }
 
     .events__img-container:nth-child(2) {
-        width: 230px;
+        width: 100%;
         height: 230px;
     }
 
     .events__img-container:nth-child(3) {
-        width: 250px;
+       width: 100%;
         height: 230px;
     }
 }
@@ -259,12 +264,12 @@
         flex-direction: column;
 
         .events__img-container:nth-child(1) {
-            width: 190px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(2) {
-            width: 190px;
+            width: 100%;
             height: 230px;
         }
     }
@@ -280,18 +285,18 @@
         .events__img-container:nth-child(1) {
 
             .events__img-container:nth-child(1) {
-                width: 190px;
+                width: 100%;
                 height: 230px;
             }
 
             .events__img-container:nth-child(2) {
-                width: 190px;
+                width: 100%;
                 height: 230px;
             }
 
             .events__img-container:nth-child(3) {
-                width: 190px;
-                height: 230px;
+                width: 100%;
+                height: 260px;
             }
 
         }
@@ -299,12 +304,12 @@
 
     .events__container-img:nth-child(2) {
         .events__img-container:nth-child(1) {
-            width: 190px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(2) {
-            width: 190px;
+            width: 100%;
             height: 230px;
             margin-right: 0;
         }
@@ -318,17 +323,17 @@
                 width: 100px;
                 height: 100px;
                 background-size: cover;
-                right: -15px;
+                right: -10px;
             }
         }
 
         .events__img-container:nth-child(1) {
-            width: 310px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(2) {
-            width: 310px;
+            width: 100%;
             height: 230px;
             margin-right: 0;
         }
@@ -346,17 +351,17 @@
         }
 
         .events__img-container:nth-child(1) {
-            width: 190px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(2) {
-            width: 190px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(3) {
-            width: 210px;
+            width: 100%;
             height: 230px;
             margin-right: 0;
         }
@@ -368,22 +373,22 @@
                 width: 110px;
                 height: 110px;
                 background-size: cover;
-                left: -30px;
+                left: -25px;
             }
         }
 
         .events__img-container:nth-child(1) {
-            width: 190px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(2) {
-            width: 190px;
+            width: 100%;
             height: 230px;
         }
 
         .events__img-container:nth-child(3) {
-            width: 190px;
+            width: 100%;
             height: 230px;
             margin-right: 0;
         }
@@ -401,16 +406,14 @@
             }
         }
     }
-}
 
-@media only screen and (max-width:749px) {
     .events__container-img:nth-child(2) {
         .events__img-container:nth-child(2) {
             &::after {
                 width: 100px;
                 height: 100px;
                 background-size: cover;
-                right: -5px;
+                right: -10px;
             }
         }
     }
