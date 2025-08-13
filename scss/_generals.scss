@@ -13,11 +13,19 @@ body {
     --background:#{$brown};
     --textColor:#fff;
     --hamburgerBg:rgb(12, 5, 0);
+    --card-bg:rgba(33, 10, 1, 1);
+    --card-button-bg:#{$brown};
+    --card-button:#{$brown};
+    --menu-nav-bg:rgba(33, 10, 1, 1);
 }
 .light-body{
     --background:#FFF8E1;
     --textColor:#5D4037;
     --hamburgerBg:#E0E0E0;
+    --card-bg:#eee1bc;
+    --card-button-bg: #e8dcb4;
+    --card-button:#867f68;
+    --menu-nav-bg:#e4c96e;
 }
 ol,
 ul {

@@ -37,12 +37,20 @@ body {
   --background:rgb(29, 9, 2);
   --textColor:#fff;
   --hamburgerBg:rgb(12, 5, 0);
+  --card-bg:rgba(33, 10, 1, 1);
+  --card-button-bg:rgb(29, 9, 2);
+  --card-button:rgb(29, 9, 2);
+  --menu-nav-bg:rgba(33, 10, 1, 1);
 }
 
 .light-body {
   --background:#FFF8E1;
   --textColor:#5D4037;
   --hamburgerBg:#E0E0E0;
+  --card-bg:#eee1bc;
+  --card-button-bg: #e8dcb4;
+  --card-button:#867f68;
+  --menu-nav-bg:#e4c96e;
 }
 
 ol,
@@ -148,7 +156,7 @@ button {
   }
 }
 .header {
-  padding: 0;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -590,7 +598,7 @@ button {
 }
 
 .menu__nav-item {
-  background: rgb(33, 10, 1);
+  background: var(--menu-nav-bg);
   box-shadow: 0px 9px 40px 0px rgba(255, 107, 0, 0.06);
   border-radius: 100px;
   padding: 19px 65px;
@@ -644,9 +652,12 @@ button {
   padding-right: 41px;
   padding-bottom: 23px;
   max-width: 297px;
-  background: rgb(33, 10, 1);
+  background: var(--card-bg);
   border-radius: 29.53px;
   margin-right: 22px;
+  color: var(--textColor);
+  font-family: "Muller";
+  transition: 250ms;
 }
 .card:last-child {
   margin: 0;
@@ -674,9 +685,9 @@ button {
 .card__button {
   border-radius: 50%;
   border: none;
-  background-color: rgb(29, 9, 2);
-  color: rgb(163, 163, 163);
-  border: 1px solid rgb(163, 163, 163);
+  background-color: var(--card-button);
+  color: rgb(224, 196, 196);
+  border: 1px solid var(--card-button);
   cursor: pointer;
   margin-right: 37px;
   width: 40px;
@@ -700,7 +711,7 @@ button {
   border: 1px solid transparent;
   border-radius: 20px;
   padding: 11px 52px 10px 50px;
-  background: linear-gradient(to right, rgb(29, 9, 2), rgb(29, 9, 2)), linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  background: linear-gradient(to right, var(--card-button-bg), var(--card-button-bg)), linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   cursor: pointer;
@@ -1224,5 +1235,178 @@ button {
     height: 100px;
     background-size: cover;
     left: -15px;
+  }
+}
+.abaut__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0 130px 0;
+}
+
+.abaut__title {
+  font-family: "Muller";
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 69.17px;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.abaut__text {
+  font-family: "Muller";
+  font-weight: 400;
+  font-size: 19.56px;
+  max-width: 459px;
+  color: rgb(163, 163, 163);
+}
+
+.abaut__pizza-warapper {
+  width: 490px;
+  height: 200px;
+  background-image: url(../../img/pizza-one.png);
+  position: relative;
+}
+.abaut__pizza-warapper::after {
+  position: absolute;
+  width: 108px;
+  height: 55px;
+  content: "";
+  right: -130px;
+  background-image: url(../../img/vektor-top.png);
+  background-repeat: no-repeat;
+}
+
+.abaut__warapper {
+  position: relative;
+}
+.abaut__warapper::after {
+  position: absolute;
+  width: 190px;
+  height: 153px;
+  content: "";
+  top: -68px;
+  right: -15px;
+  background-image: url(../../img/intro-pizza-img.png);
+  background-position: center center;
+}
+.abaut__warapper::before {
+  position: absolute;
+  width: 180px;
+  height: 200px;
+  content: "";
+  bottom: 100px;
+  left: -52px;
+  background-image: url(../../img/intro-fries-img.png);
+  background-position: center center;
+}
+
+@media only screen and (max-width: 1135px) {
+  .abaut__pizza-warapper::after {
+    right: -125px;
+  }
+  .abaut__img {
+    width: 480px;
+    height: 465px;
+  }
+}
+@media only screen and (max-width: 1095px) {
+  .abaut__title {
+    font-size: 45px;
+  }
+  .abaut__text {
+    font-size: 16px;
+  }
+  .abaut__img {
+    width: 480px;
+  }
+  .abaut__pizza-warapper::after {
+    left: 90px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 1001px) {
+  .abaut__warapper::after {
+    width: 235px;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .abaut__pizza-warapper {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center center;
+  }
+  .abaut__pizza-warapper::after {
+    display: none;
+  }
+  .abaut__warapper::after {
+    width: 150px;
+    height: 150px;
+    left: 370px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 300px;
+  }
+  .abaut__warapper::before {
+    width: 150px;
+    height: 180px;
+    top: 300px;
+    left: 0px;
+    bottom: 50px;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .abaut__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .abaut__title {
+    text-align: center;
+  }
+}
+.footer {
+  max-width: 1512px;
+  margin: 0 auto;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-left: 130px;
+  padding-bottom: 63px;
+  padding-right: 65px;
+}
+
+.footer__bottom-text {
+  color: transparent;
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.footer__link {
+  font-family: "Muller";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 17.72px;
+  line-height: 126%;
+  letter-spacing: -2%;
+  color: rgb(81, 81, 81);
+}
+.footer__link:hover {
+  color: white;
+  transition: 900ms;
+}
+
+.footer__title {
+  color: rgb(163, 163, 163);
+}
+
+@media only screen and (max-width: 946px) {
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
   }
 }

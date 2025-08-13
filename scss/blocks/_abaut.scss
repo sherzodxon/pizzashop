@@ -1,0 +1,151 @@
+.abaut__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 130px 0;
+}
+
+.abaut__title {
+    font-family: "Muller";
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 69.17px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+
+}
+
+.abaut__text {
+    font-family: "Muller";
+    font-weight: 400;
+    font-size: 19.56px;
+    max-width: 459px;
+    color: rgba(163, 163, 163, 1);
+}
+
+.abaut__pizza-warapper {
+    width: 490px;
+    height: 200px;
+    background-image: url(../../img/pizza-one.png);
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 108px;
+        height: 55px;
+        content: '';
+        right: -130px;
+        background-image: url(../../img/vektor-top.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.abaut__warapper {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 190px;
+        height: 153px;
+        content: '';
+        top: -68px;
+        right: -15px;
+        background-image: url(../../img/intro-pizza-img.png);
+        background-position: center center;
+    }
+
+    &::before {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        content: '';
+        bottom: 100px;
+        left: -52px;
+        background-image: url(../../img/intro-fries-img.png);
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width:1135px) {
+    .abaut__pizza-warapper {
+        &::after {
+            right: -125px;
+        }
+    }
+
+    .abaut__img {
+        width: 480px;
+        height: 465px;
+    }
+}
+
+@media only screen and (max-width:1095px) {
+    .abaut__title {
+        font-size: 45px;
+    }
+
+    .abaut__text {
+        font-size: 16px;
+    }
+
+    .abaut__img {
+        width: 480px;
+    }
+
+    .abaut__pizza-warapper {
+        &::after {
+            left: 90px;
+            display: none
+        }
+    }
+}
+
+@media only screen and (max-width:1001px) {
+    .abaut__warapper {
+        &::after {
+            width: 235px;
+        }
+    }
+}
+
+@media only screen and (max-width:998px) {
+    .abaut__pizza-warapper {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center center;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .abaut__warapper {
+        &::after {
+            width: 150px;
+            height: 150px;
+            left: 370px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left:300px;
+        }
+
+        &::before {
+            width: 150px;
+            height: 180px;
+            top: 300px;
+            left: 0px ;
+            bottom: 50px;
+            background-size: contain;
+        }
+
+    }
+}
+@media only screen and (max-width:768px){
+    .abaut__container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .abaut__title{
+        text-align: center;
+    }
+}

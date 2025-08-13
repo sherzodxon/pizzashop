@@ -1,0 +1,41 @@
+.footer{
+    max-width: 1512px;
+    margin: 0 auto;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-left: 130px;
+    padding-bottom: 63px;
+    padding-right: 65px;
+}
+
+.footer__bottom-text {
+    color: transparent;
+    background: $gradient;
+    background-clip: text;
+}
+
+.footer__link {
+    font-family: "Muller";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 17.72px;
+    line-height: 126%;
+    letter-spacing: -2%;
+    color: rgba(81, 81, 81, 1);
+    &:hover{
+        color: #ffff;
+        transition: 900ms;
+    }
+}
+.footer__title{
+    color: rgba(163, 163, 163, 1);
+}
+@media only screen and (max-width:946px){
+    .footer__container{
+        flex-direction: column;
+        text-align: center;
+    }
+}
