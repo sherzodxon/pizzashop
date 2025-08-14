@@ -41,6 +41,7 @@ body {
   --card-button-bg:rgb(29, 9, 2);
   --card-button:rgb(29, 9, 2);
   --menu-nav-bg:rgba(33, 10, 1, 1);
+  --popular-title-bg:#fff;
 }
 
 .light-body {
@@ -51,6 +52,7 @@ body {
   --card-button-bg: #e8dcb4;
   --card-button:#867f68;
   --menu-nav-bg:#e4c96e;
+  --popular-title-bg: #fff;
 }
 
 ol,
@@ -68,6 +70,10 @@ button {
   background: transparent;
   border: none;
   font-family: "Muller";
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .gradient-border {
@@ -638,6 +644,7 @@ button {
   .menu__list {
     flex-wrap: wrap;
     gap: 90px;
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 642px) {
@@ -901,6 +908,7 @@ button {
   text-align: center;
   padding-top: 125px;
   padding-bottom: 117px;
+  color: #fff;
 }
 
 @media only screen and (max-width: 1258px) {
@@ -1009,7 +1017,7 @@ button {
     width: 235px;
   }
 }
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1030px) {
   .abaut__pizza-warapper {
     background-size: contain;
     background-repeat: no-repeat;
@@ -1057,6 +1065,14 @@ button {
   padding-left: 130px;
   padding-bottom: 63px;
   padding-right: 65px;
+  flex-wrap: wrap;
+}
+
+.footer__tel {
+  background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .footer__bottom-text {
@@ -1064,6 +1080,10 @@ button {
   background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.footer__item {
+  margin-bottom: 12px;
 }
 
 .footer__link {
@@ -1080,13 +1100,42 @@ button {
   transition: 900ms;
 }
 
+.footer__icons {
+  max-width: 1252px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+}
+
+.footer__socials-item {
+  margin-right: 10px;
+}
+
+.footer__span {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .footer__title {
   color: rgb(163, 163, 163);
 }
 
 @media only screen and (max-width: 946px) {
   .footer__container {
+    flex-wrap: wrap;
+    text-align: center;
     flex-direction: column;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 946px) {
+  .footer__icons {
+    flex-wrap: wrap;
     text-align: center;
   }
 }
