@@ -1061,10 +1061,6 @@ span {
 .footer__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 70px;
-  padding-left: 130px;
-  padding-bottom: 63px;
-  padding-right: 65px;
   flex-wrap: wrap;
 }
 
@@ -1101,7 +1097,6 @@ span {
 }
 
 .footer__icons {
-  max-width: 1252px;
   display: flex;
   align-items: center;
   justify-content: space-between;
