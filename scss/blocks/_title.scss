@@ -1,0 +1,17 @@
+ .title {
+    font-weight: 800;
+    font-size: 69.17px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+}
+
+@media only screen and (max-width:$tablet) {
+.title{
+    font-size: 55px;
+}
+}
+@media only screen and (max-width:$tablet) {
+.title{
+    font-size: 48px;
+}
+}
