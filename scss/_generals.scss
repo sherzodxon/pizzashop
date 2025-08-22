@@ -17,6 +17,7 @@ body {
     --card-button-bg:#{$brown};
     --card-button:#{$brown};
     --menu-nav-bg:rgba(33, 10, 1, 1);
+    --popular-title-bg:#fff;
 }
 .light-body{
     --background:#FFF8E1;
@@ -26,6 +27,7 @@ body {
     --card-button-bg: #e8dcb4;
     --card-button:#867f68;
     --menu-nav-bg:#e4c96e;
+    --popular-title-bg: #fff;
 }
 ol,
 ul {
@@ -40,6 +42,9 @@ button {
     background: transparent;
     border: none;
     font-family: "Muller";
+}
+span{
+    font-family: 'Times New Roman', Times, serif;
 }
 .gradient-border {
     border: 2px solid transparent;
