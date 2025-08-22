@@ -793,6 +793,7 @@ span {
   background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
   border-radius: 84px;
   margin-top: 20px;
+  display: inline-block;
 }
 .card__menu-link:hover {
   background-color: transparent;
@@ -1446,6 +1447,7 @@ span {
 
 .footer__title {
   color: rgb(163, 163, 163);
+  margin-bottom: 16px;
 }
 
 @media only screen and (max-width: 946px) {
